@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'User',
 ]
 
@@ -49,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'bookseeker_be.urls'
@@ -73,6 +76,9 @@ AUTH_USER_MODEL='User.User'
 
 WSGI_APPLICATION = 'bookseeker_be.wsgi.application'
 
+CORS_ORIGIN_REGEX_WHITELIST = [
+    "http://localhost:3000",
+]
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases

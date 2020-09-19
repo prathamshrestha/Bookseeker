@@ -3,7 +3,7 @@ from  django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    middle_name      =models.CharField(verbose_name='first_name',max_length=100)
+    middle_name      =models.CharField(verbose_name='middle name',max_length=100)
     contact_address =models.CharField(max_length=150)
     contact_number  =models.CharField(max_length=10, blank=True)
     
