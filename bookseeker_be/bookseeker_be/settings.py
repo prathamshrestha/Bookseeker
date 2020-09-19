@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'User',
 ]
 
@@ -67,6 +68,8 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTH_USER_MODEL='User.User'
 
 WSGI_APPLICATION = 'bookseeker_be.wsgi.application'
 
