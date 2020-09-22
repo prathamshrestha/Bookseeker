@@ -14,7 +14,7 @@ class RegisterSerializers(serializers.ModelSerializer):
         model = User
         fields = ['first_name', 'middle_name','last_name', 'email',
                   'username', 'contact_number', 'contact_address',
-                  'password', 'confirm_password']
+                  'password', 'confirm_password','is_collegestudent']
         # read_only_fields = ['id']
         extra_kwargs = {
             'password': {
@@ -46,3 +46,8 @@ class RegisterSerializers(serializers.ModelSerializer):
             raise serializers.ValidationError("password do not match")
         account.set_password(password)
         account.save()
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email')
