@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html>
+
+	<head>
+	
+        <title> Book Seeker </title>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<div class="main">
+			<div class="logo">
+				<img src="css/book1.png">
+			</div>
+				<ul class=".ul">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Books</a></li>
+					<li><a href="#popupl">Log in</a></li>
+					<li><a href="#popup">Sign up</a></li>
+                </ul>
+                
+               
+            </div>
+            <div class="search-box-div">
+                <div class="search-box">
+                    <input type="text" class="search-box__input" placeholder="enter your search" aria-label="search"/>
+                    <button class="search-box__submit"><i class="icon-basic-magnifier" aria-label="submit search"></i></button>
+                </div>
+			
+			<div class="title">
+				<h1>Book Seeker</h1>
+			</div>
+			
+			<div class="button">
+				<a href="#" class="btn">BUY BOOKS</a>
+                <a href="#" class="btn">SELL BOOKS</a>
+                <a href="#" class="btn">RENT BOOKS</a>
+			</div>
+			
+		
+		</header>
+	
+    </body>
+    
+    <div class="popup" id="popup">
+        <div class="popup__content">
+         <form action="#" class="form">
+
+            <div >
+                <h2 class="heading-secondary">
+                   Join bookseeker
+                </h2>
+                <a href="#main" class="popup__close">&times;</a>
+            </div>
+
+             <div class="form__group">
+                <label for="firstname"  class="one">First name</label>
+                 <input type="text" class="form__input" placeholder="First name" id="firstname" required>
+                 </div>
+             <div class="form__group">
+                <label for="middlename" class="two">Middle name</label>
+                <input type="text" class="form__input" placeholder="Middle name" id="middlename" required>
+              
+            </div>
+            <div class="form__group">
+                <label for="lastname" class="three">last name</label>
+                <input type="text" class="form__input" placeholder="Last name" id="lastname" required>
+               
+                
+            </div>
+            <div class="form__group">
+                <label for="email" class="four">Email address</label>
+            
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+            </div>
+            <div class="form__group">
+                <label for="uname" class="five">Username</label>
+                <input type="text" class="form__input" placeholder="Username" id="uname" required>
+               
+            </div>
+            <div class="form__group">
+                <label for="contact" class="six">Contact number</label>
+                <input type="text" class="form__input" placeholder="Contact number " id="contact" required>
+               
+            </div>
+            <div class="form__group">
+                <label for="Address" class="seven">Address</label>
+                <input type="text" class="form__input" placeholder="Address " id="Address" required>
+               
+            </div>
+            <div class="form__group">
+                <label for="Password" class="eight"  class="pword"  >Password</label>
+                <input type="password" class="form__input" placeholder="Password " id="Password" required>
+               
+            </div>
+            <div class="form__group">
+                <label for="cpassword" class="nine">Confirm Password</label>
+                <input type="password" class="form__input" placeholder="Confirm password " id="cpassword" required>
+              
+            </div>
+            <div class="form__group">
+                <label for="checkbox" class="ten">Is college student</label>
+                <input type="checkbox" class="teni"  id="checkbox" >
+              
+            </div>
+        <button class="buton"><a href="#" class="butn">Sign up</a></button>
+            
+         </form>
+        </div>
+    </div>
+
+    <div class="popupl" id="popupl">
+        <div class="popupl__content">
+            <div >
+                <h2 class="heading-secondary-2">
+                  Welcome back
+                </h2>
+                <a href="#main" class="popupl__close">&times;</a>
+            </div>
+
+            <form action="#" class="form">
+
+            <div class="form__group move">
+                <label for="email" class="four2">Email address</label>
+            
+                <input type="email" class="input" placeholder="Email address" id="email" required>
+            </div>
+
+            <div class="form__group">
+                <label for="password" class="four3">Password</label>
+            
+                <input type="password" class="input" placeholder="Password" id="Password" required>
+            </div>
+<div class="move-button">
+    <button class="buton2"><a href="#" class="butn">Log in</a></button>
+</div>
+            
+        </form>
+        </div>
+    </div>
+
+</html>
