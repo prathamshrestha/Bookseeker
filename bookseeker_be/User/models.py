@@ -8,8 +8,8 @@ from django.dispatch import receiver
 
 
 class User(AbstractUser):
-    middle_name      =models.CharField(verbose_name='middle name',max_length=100)
-    contact_address =models.CharField(max_length=150)
+    middle_name      =models.CharField(verbose_name='middle name',max_length=100,blank=True)
+    contact_address =models.CharField(max_length=150,blank=True)
     contact_number  =models.CharField(max_length=10, blank=True)
     is_collegestudent= models.BooleanField(default=False)
 

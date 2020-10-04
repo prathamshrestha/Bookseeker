@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import SignUpView
+from .views import UserList,current_user
 from rest_framework.authtoken.views import obtain_auth_token
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns=[
-    path('register/',SignUpView.as_view()),
-    path('login/',obtain_auth_token)
+    path('current_user/', current_user),
+    path('users/', UserList.as_view())
 
 ]
