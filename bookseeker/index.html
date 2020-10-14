@@ -4,147 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,00,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/icon-font.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="images/shortcut-logo.png">
-
-    <title>Bookseeker</title>
-
-    </head>
-
-    <body>
-        <header>
-		
-			<div class="main">
-			<div class="logo">
-				<img src="css/logo.png">
-			</div>
-				<ul class=".ul">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Books</a></li>
-					<li><a href="#popupl">Log in</a></li>
-					<li><a href="#popup">Sign up</a></li>
-                </ul>
-                
-               
-            </div>
-            <div class="search-box-div">
-                <div class="search-box">
-                    <input type="text" class="search-box__input" placeholder="enter your search" aria-label="search"/>
-                    <button class="search-box__submit"><i class="icon-basic-magnifier" aria-label="submit search"></i></button>
-                </div>
-			
-			<div class="title">
-				<h1>Book Seeker</h1>
-			</div>
-			
-			<div class="button">
-				<a href="#" class="btn">BUY BOOKS</a>
-                <a href="#" class="btn">SELL BOOKS</a>
-                <a href="#" class="btn">RENT BOOKS</a>
-			</div>
-			
-		
-		</header>
-	
-    </body>
+    <link rel="stylesheet" href="css/icon-font.css">
     
-    <div class="popup" id="popup">
-        <div class="popup__content">
-         <form action="#" class="form">
+    
+    
+    <link rel="shortcut icon" type="image/png" href="images/shortcut-logo.png">
+    <title>bookseeker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-            <div >
-                <h2 class="heading-secondary">
-                   Join bookseeker
-                </h2>
-                <a href="#main" class="popup__close">&times;</a>
-            </div>
+</head>
 
-             <div class="form__group">
-                <label for="firstname"  class="one">First name</label>
-                 <input type="text" class="form__input" placeholder="First name" id="firstname" required>
-                 </div>
-             <div class="form__group">
-                <label for="middlename" class="two">Middle name</label>
-                <input type="text" class="form__input" placeholder="Middle name" id="middlename" required>
-              
+<body >
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="images/logo.png" alt="logo" class="navbar__logo-picture">
             </div>
-            <div class="form__group">
-                <label for="lastname" class="three">last name</label>
-                <input type="text" class="form__input" placeholder="Last name" id="lastname" required>
-               
-                
-            </div>
-            <div class="form__group">
-                <label for="email" class="four">Email address</label>
-            
-                <input type="email" class="form__input" placeholder="Email address" id="email" required>
-            </div>
-            <div class="form__group">
-                <label for="uname" class="five">Username</label>
-                <input type="text" class="form__input" placeholder="Username" id="uname" required>
-               
-            </div>
-            <div class="form__group">
-                <label for="contact" class="six">Contact number</label>
-                <input type="text" class="form__input" placeholder="Contact number " id="contact" required>
-               
-            </div>
-            <div class="form__group">
-                <label for="Address" class="seven">Address</label>
-                <input type="text" class="form__input" placeholder="Address " id="Address" required>
-               
-            </div>
-            <div class="form__group">
-                <label for="Password" class="eight"  class="pword"  >Password</label>
-                <input type="password" class="form__input" placeholder="Password " id="Password" required>
-               
-            </div>
-            <div class="form__group">
-                <label for="cpassword" class="nine">Confirm Password</label>
-                <input type="password" class="form__input" placeholder="Confirm password " id="cpassword" required>
-              
-            </div>
-            <div class="form__group">
-                <label for="checkbox" class="ten">Is college student</label>
-                <input type="checkbox" class="teni"  id="checkbox" >
-              
-            </div>
-        <button class="buton"><a href="#" class="butn">Sign up</a></button>
-            
-         </form>
+            <ul class="navbar__ul">
+                <button class="navbar__ul-list">Home</button>
+
+                <button class="navbar__ul-list">Log in</button>
+                <button class="navbar__ul-list">Sign in </button>
+                <button class="navbar__ul-list">Contact</button>
         </div>
-    </div>
 
-    <div class="popupl" id="popupl">
-        <div class="popupl__content">
-            <div >
-                <h2 class="heading-secondary-2">
-                  Welcome back
-                </h2>
-                <a href="#main" class="popupl__close">&times;</a>
+        <div class="section">
+
+            <div class="ui grid custom-style">
+                <div class="column eight wide width">
+
+                    <div class="grid-image">
+                        <img src="images/pik.png" alt="grid-image" class="grid-image-1">
+                    </div>
+                </div>
+
+                <div class="column eight wide width">
+
+                    <div class="text-side">
+                        <h1 class="text-side__font">Join <span class="side-color">Bookseeker</span> </h1>
+
+                    </div>
+
+                    <div class="content">
+                        <div class="search-bar">
+                            <input type="text" class="search-bar__input" placeholder="enter your search" aria-label="">
+                            <button class="search-bar__submit" aria-label="submit search"><i class="icon-basic-magnifier"></i></button>
+                        </div>
+                    </div>
+
+               
+
+
+                    <div class="side-buttons">
+                        <button class="side-buttons__entity button-style-1">BUY BOOKS</button><br> <br>
+
+                        <button class="side-buttons__entity button-style-2">RENT BOOKS</button><br> <br>
+                        <button class="side-buttons__entity button-style-3">SELL BOOKS</button>
+                    </div>
+
+                </div>
             </div>
-
-            <form action="#" class="form">
-
-            <div class="form__group move">
-                <label for="email" class="four2">Email address</label>
-            
-                <input type="email" class="input" placeholder="Email address" id="email" required>
-            </div>
-
-            <div class="form__group">
-                <label for="password" class="four3">Password</label>
-            
-                <input type="password" class="input" placeholder="Password" id="Password" required>
-            </div>
-<div class="move-button">
-    <button class="buton2"><a href="#" class="butn">Log in</a></button>
-</div>
-            
-        </form>
         </div>
-    </div>
+
+
+
+
+
+       
+
+</body>
+
 
 </html>
