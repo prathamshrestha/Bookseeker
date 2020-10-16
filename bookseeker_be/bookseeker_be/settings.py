@@ -41,22 +41,20 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'sell_books',
-    'User',
+    'knox',
+    'accounts',
+    # 'User',
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
+        'knox.auth.TokenAuthentication',
     ),
+    
 }
-JWT_AUTH = {
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'User.utils.my_jwt_response_handler'
-}
+# JWT_AUTH = {
+#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'User.utils.my_jwt_response_handler'
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -88,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-AUTH_USER_MODEL='User.User'
+# AUTH_USER_MODEL='User.User'
 
 WSGI_APPLICATION = 'bookseeker_be.wsgi.application'
 

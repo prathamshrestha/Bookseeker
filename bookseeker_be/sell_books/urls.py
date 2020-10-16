@@ -1,8 +1,12 @@
 from django.urls import path
-from .views import booksell_view, booksell_list_view,booksell_delete_view
-urlpatterns = [
-    path('booksell/',booksell_view.as_view()),
-    path('booksell/update_delete/<int:pk>/',booksell_delete_view.as_view()),
-    path('booksell/list/',booksell_list_view.as_view()),
+from .views import booksell_delete_view
+from django.conf.urls.static import static
+from django.conf import settings
+from rest_framework import routers
 
-]
+router=routers.DefaultRouter()
+router.register('booksell',booksell_delete_view,'booksell')
+
+urlpatterns = router.urls
+
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
