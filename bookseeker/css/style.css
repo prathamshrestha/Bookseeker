@@ -6,6 +6,12 @@
   box-sizing: border-box !important;
   font-family: "Open Sans", sans-serif !important; }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+  color: #222; }
+
 .navbar {
   background-color: #f0f4f8; }
   .navbar__logo {
@@ -182,49 +188,46 @@
         .content-1 .search-bar-1:focus-within .search-bar-1__submit:focus, .content-1 .search-bar-1:focus-within .search-bar-1__submit:hover {
           outline: 0 !important; }
 
-.mid-part {
-  padding: 165px 0 !important;
+.custom-jumbo {
+  padding: 100px 0 !important;
   background-color: #ffd1b9 !important; }
 
-.initial-text {
+.main-para {
   display: inline-block !important;
-  font-size: 105px !important;
-  transform: translate(395px, -20px) !important; }
+  font-weight: 700 !important;
+  transform: translateY(-10px) !important;
+  margin-bottom: 20px !important; }
 
-.initial-text-1 {
+.container-2 {
+  margin-top: 35px !important;
+  padding-bottom: 150px !important; }
+
+.mission {
   display: inline-block !important;
-  transform: translate(-42px, 40px) !important; }
+  font-size: 56px !important;
+  transform: translateX(90px !important);
+  margin-left: 85px !important; }
 
-.initial-text-2 {
+.mission-para {
+  margin-top: 10px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 26px !important; }
+
+.value {
   display: inline-block !important;
-  transform: translate(750px, 40px); }
+  font-size: 56px !important; }
 
-.initial-text-3 {
-  display: inline-block !important;
-  transform: translate(751px, 41px); }
+.value-para {
+  margin-top: 30px !important;
+  margin-bottom: 80px !important;
+  font-size: 22px !important; }
 
-.image {
-  margin-left: 50px !important;
-  margin-top: 40px !important; }
+.mix-weight {
+  font-weight: 600 !important; }
 
-.harry-potter {
-  margin-left: 270px !important;
-  margin-top: 40px !important; }
+.mix-text {
+  font-size: 22px !important; }
 
-.harry-side-text-1 {
-  display: inline-block !important;
-  font-family: "Sansita Swashed", cursive !important;
-  font-size: 90px !important;
-  margin-top: 185px !important; }
-
-.harry-side-text-2 {
-  display: inline-block !important;
-  font-family: "Sansita Swashed", cursive !important;
-  font-size: 90px !important;
-  margin-top: 22px !important; }
-
-.harry-side-text-3 {
-  display: inline-block !important;
-  font-family: "Sansita Swashed", cursive !important;
-  font-size: 90px !important;
-  margin-top: 2px !important; }
+.last-part {
+  padding-bottom: 100px !important; }

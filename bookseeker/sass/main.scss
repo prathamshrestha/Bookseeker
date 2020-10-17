@@ -8,12 +8,19 @@
     
 }  
 
+html, body {
+    height:100%;
+    width:100%;
+    font-family: 'poppins', sans-serif;
+    color: #222;
+    }
+
 
 
 .navbar{
 
     background-color: #f0f4f8;
-   
+ 
    
 
     &__logo{
@@ -294,70 +301,126 @@ width:100%!important;
         }
 
       
-    }
+    } 
 }
 
 
 
 
-.mid-part{
-    padding: 165px 0!important;
-    background-color:	rgb(255, 209, 185)!important;
-}
+// .mid-part{
+//     padding: 165px 0!important;
+//     background-color:	rgb(255, 209, 185)!important;
+// }
 
-.initial-text{
+// .initial-text{
   
-    display: inline-block!important;
-    font-size:105px!important;
-    // font-weight:600px!important;
-    transform:translate(395px,-20px)!important;
-}
+//     display: inline-block!important;
+//     font-size:105px!important;
+//     // font-weight:600px!important;
+//     transform:translate(395px,-20px)!important;
+// }
 
-.initial-text-1{
+// .initial-text-1{
    
-    display: inline-block!important;
-    transform:translate(-42px,40px)!important;
-}
+//     display: inline-block!important;
+//     transform:translate(-42px,40px)!important;
+// }
 
-.initial-text-2{
+// .initial-text-2{
     
-    display: inline-block!important;
-    transform:translate(750px,40px);
-}
+//     display: inline-block!important;
+//     transform:translate(750px,40px);
+// }
 
-.initial-text-3{
+// .initial-text-3{
   
-    display: inline-block!important;
-    transform:translate(751px,41px);
+//     display: inline-block!important;
+//     transform:translate(751px,41px);
+// }
+//  .image{
+//      margin-left:50px!important;
+//      margin-top:40px!important;
+//  }
+
+//  .harry-potter{
+//      margin-left: 270px!important;
+//      margin-top:40px!important;
+//  }
+
+//  .harry-side-text-1{
+//      display: inline-block!important;
+//     font-family: 'Sansita Swashed', cursive!important;
+//     font-size: 90px!important;
+//     margin-top:185px!important;
+//  }
+
+//  .harry-side-text-2{
+//     display: inline-block!important;
+//     font-family: 'Sansita Swashed', cursive!important ;
+//     font-size: 90px!important;
+//     margin-top:22px!important;
+//  }
+//  .harry-side-text-3{
+//     display: inline-block!important;
+//     font-family: 'Sansita Swashed', cursive!important ;
+//     font-size: 90px!important;
+//     margin-top:2px!important;
+//  }
+
+
+.custom-jumbo{
+padding:100px 0!important;
+background-color: rgb(255,209,185)!important;
 }
- .image{
-     margin-left:50px!important;
-     margin-top:40px!important;
- }
 
- .harry-potter{
-     margin-left: 270px!important;
-     margin-top:40px!important;
- }
-
- .harry-side-text-1{
-     display: inline-block!important;
-    font-family: 'Sansita Swashed', cursive!important;
-    font-size: 90px!important;
-    margin-top:185px!important;
- }
-
- .harry-side-text-2{
+.main-para{
     display: inline-block!important;
-    font-family: 'Sansita Swashed', cursive!important ;
-    font-size: 90px!important;
-    margin-top:22px!important;
- }
- .harry-side-text-3{
+    font-weight: 700!important;
+   transform: translateY(-10px)!important;
+   margin-bottom: 20px!important;
+}
+
+.container-2{
+    margin-top:35px!important;
+    padding-bottom: 150px!important;
+}
+
+.mission{
     display: inline-block!important;
-    font-family: 'Sansita Swashed', cursive!important ;
-    font-size: 90px!important;
-    margin-top:2px!important;
- }
+    font-size:56px!important;
+    transform:translateX(90px!important);
+   margin-left:85px!important;
 
+}
 
+.mission-para{
+    margin-top:10px!important;
+    font-weight: 600!important;
+    font-size: 16px!important;
+    line-height:26px!important;
+}
+
+.value{
+    display: inline-block!important;
+    font-size:56px!important;
+}
+
+.value-para{
+//    font-size:16px!important;
+margin-top:30px!important;
+margin-bottom:80px!important;
+font-size:22px!important;
+}
+
+.mix-weight{
+    font-weight:600!important;
+    
+}
+
+.mix-text{
+    font-size:22px!important; 
+}
+ 
+.last-part{ 
+    padding-bottom: 100px!important;
+}
