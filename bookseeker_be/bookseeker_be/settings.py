@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'sell_books',
     'knox',
     'accounts',
+    'dashboard',
     # 'User',
 ]
 
