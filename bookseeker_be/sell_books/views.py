@@ -9,18 +9,31 @@ from .serializers import booksell_serializers
    
 
 
-# class booksell_list_view(ListAPIView):
-#     serializer_class=booksell_serializers
-#     permission_classes=[permissions.AllowAny]
-#     queryset=booksell_model.objects.all()
+class booksell_list_view(ListAPIView):
+    serializer_class=booksell_serializers
+    permission_classes=[permissions.AllowAny]
+    queryset=booksell_model.objects.all()
 
-class booksell_delete_view(viewsets.ModelViewSet):
+class user_booklist_view(ListAPIView):
+    serializer_class=booksell_serializers
+    permission_classes=[permissions.IsAuthenticated]
+
+    
+    def get_queryset(self):
+        """
+        This view should return a list of all the purchases
+        for the currently authenticated user.
+        """
+        user = self.request.user
+        return booksell_model.objects.filter(user=user)
+
+class booksell_delete_view(RetrieveUpdateDestroyAPIView):
     permission_classes=[permissions.IsAuthenticated]
 
     serializer_class=booksell_serializers
+    queryset=booksell_model.objects.all()
 
-    def get_queryset(self):
-        return self.request.user.sell_books.all()
-
-    def perform_create(self,serializer):
-        serializer.save(owner=self.request.user)
+class booksell_view(CreateAPIView):
+    permission_classes=[permissions.IsAuthenticated]
+    serializer_class=booksell_serializers
+    queryset=booksell_model.objects.all()

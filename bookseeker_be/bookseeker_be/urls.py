@@ -21,6 +21,7 @@ urlpatterns = [
     path('token-auth/', obtain_jwt_token),
     path('admin/', admin.site.urls),
     path('',include('accounts.urls')),
-    path('',include('sell_books.urls'))
+    path('',include('sell_books.urls')),
+    path('',include('dashboard.urls')),
 
 ]

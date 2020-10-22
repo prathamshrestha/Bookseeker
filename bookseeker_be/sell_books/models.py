@@ -6,7 +6,7 @@ def upload_path(instance, filename):
     return '/'.join(['bookpic',str(instance.bookname), filename])
 
 class booksell_model(models.Model):
-    user=models.OneToOneField(User, on_delete=models.CASCADE,null=True)
+    user=models.ForeignKey(User, on_delete=models.CASCADE,null=True)
     bookname=models.CharField(max_length=50,blank=True)
     bookpicture=models.ImageField(blank=True, upload_to=upload_path)
     age = models.IntegerField(blank=True)

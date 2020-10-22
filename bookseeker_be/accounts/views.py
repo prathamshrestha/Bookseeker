@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from knox.models import AuthToken
 from .serializers import UserSerializer,RegisterSerializer,LoginSerializer
 from rest_framework import viewsets
-
+from django.contrib.auth.models import  User
 
 #Register View
 class Registration_view(generics.GenericAPIView):
@@ -40,7 +40,9 @@ class User_view(generics.RetrieveAPIView):
   permission_classes = [
     permissions.IsAuthenticated,
   ]
+  lookup_field='id'
   serializer_class = UserSerializer
+  queryset=User.objects.all()
 
   def get_object(self):
     return self.request.user
