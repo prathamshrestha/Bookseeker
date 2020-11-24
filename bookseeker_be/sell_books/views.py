@@ -3,6 +3,7 @@ from rest_framework.generics import CreateAPIView,ListAPIView,DestroyAPIView,Ret
 from rest_framework import viewsets,permissions
 from .models import booksell_model
 from .serializers import booksell_serializers
+from rest_framework.filters import SearchFilter, OrderingFilter
 
 # class booksell_view(CreateAPIView):
 #     serializer_class=booksell_serializers
@@ -13,6 +14,8 @@ class booksell_list_view(ListAPIView):
     serializer_class=booksell_serializers
     permission_classes=[permissions.AllowAny]
     queryset=booksell_model.objects.all()
+    filter_backends=(SearchFilter,OrderingFilter)
+    search_fields=('bookname','author','genre')
 
 class user_booklist_view(ListAPIView):
     serializer_class=booksell_serializers

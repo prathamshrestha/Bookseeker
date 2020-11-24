@@ -87,7 +87,7 @@ TEMPLATES = [
     },
 ]
 
-# AUTH_USER_MODEL='User.User'
+AUTH_USER_MODEL='accounts.User'
 
 WSGI_APPLICATION = 'bookseeker_be.wsgi.application'
 
@@ -130,7 +130,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
 

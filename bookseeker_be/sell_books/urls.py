@@ -16,6 +16,8 @@ urlpatterns=[
     
     path('bookbuy/',booksell_list_view.as_view()),
     path('booksell/',booksell_view.as_view()),
-    path('bookupdate/<int:id>',booksell_delete_view.as_view()),
+    path('book_update_delete/<int:id>',booksell_delete_view.as_view()),
     path('userbooklist/',user_booklist_view.as_view()),
+    # path('userbooklist/',user_booklist_view.as_view()),
+
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
