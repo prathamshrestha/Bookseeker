@@ -124,6 +124,17 @@ body {
   background-color:rgba(52, 58, 64,.8) ;
 }
 
+.form1{
+  width:500px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.form2{
+  margin-right:5px;
+}
+
 /* end of buy rent page */
 
 
@@ -187,3 +198,5 @@ padding-top:30px;
 .book-detail-price{
   margin-top:15px;
 }
+
+/* end of book details page */
