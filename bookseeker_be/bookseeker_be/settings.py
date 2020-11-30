@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'knox',
     'accounts',
     'dashboard',
+    'phonenumber_field',
+    'order',
+    'comment',
     # 'User',
 ]
 

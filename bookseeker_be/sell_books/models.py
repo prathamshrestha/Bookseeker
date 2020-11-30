@@ -12,6 +12,7 @@ def upload_path(instance, filename):
 
 class booksell_model( SoftDeletionModel,TimestampsModel):
     user=models.ForeignKey(User, on_delete=models.CASCADE)
+    
     bookname=models.CharField(max_length=50,blank=True)
     bookpicture=models.ImageField(blank=True, upload_to=upload_path)
     author=models.CharField(max_length=100,blank=True)

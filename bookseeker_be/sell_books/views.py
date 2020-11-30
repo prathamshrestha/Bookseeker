@@ -32,7 +32,7 @@ class user_booklist_view(ListAPIView):
 
 class booksell_delete_view(RetrieveUpdateDestroyAPIView):
     permission_classes=[permissions.IsAuthenticated]
-
+    lookup_field = 'id'
     serializer_class=booksell_serializers
     queryset=booksell_model.objects.all()
 

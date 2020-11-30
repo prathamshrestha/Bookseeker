@@ -1,5 +1,4 @@
 from django.db import models
-from accounts.models import User
 from django_timestamps.softDeletion import SoftDeletionModel
 from django_timestamps.timestamps import TimestampsModel
 from django.conf import settings

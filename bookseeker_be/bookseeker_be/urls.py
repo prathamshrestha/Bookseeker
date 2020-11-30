@@ -23,5 +23,8 @@ urlpatterns = [
     path('',include('accounts.urls')),
     path('',include('sell_books.urls')),
     path('',include('dashboard.urls')),
+    path('',include('order.urls')),
+    path('',include('comment.urls')),
+
 
 ]
