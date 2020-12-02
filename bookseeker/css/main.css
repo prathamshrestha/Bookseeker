@@ -84,13 +84,12 @@ body {
 
 .login-margin{
   margin-top:175px;
+  padding-bottom: 100px;
+
 }
 
 
-.bg-login-footer{
-  background-color: 	rgb(52, 58, 64);
-  margin-top:110px;
-}
+
 
 /* end of login page */
 
@@ -109,6 +108,7 @@ body {
 
 .custom-height-card-container{
   margin-top:50px;
+  
 }
 
 .card-custom{
@@ -133,6 +133,10 @@ body {
 
 .form2{
   margin-right:5px;
+}
+
+.footer-padding{
+  padding-bottom:100px;
 }
 
 /* end of buy rent page */
