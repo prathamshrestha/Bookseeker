@@ -190,6 +190,13 @@ padding-top:30px;
 
 /* book-details-page */
 
+.comment-date{
+  font-size:15px;
+ color:black;
+  position: absolute;
+  right:0;
+}
+
 #details-body{
   background-color: 	rgb(239, 240, 245);
 }
@@ -259,7 +266,7 @@ transform:translateY(-10px);
   color: grey;
   padding-left:8px;
   margin-top:10px;
-  
+  position: relative;
 }
 
 .chat1-h2{
